@@ -1,6 +1,6 @@
 # Hello GUI - Fyne Application
 
-A simple "Hello World" GUI application built with Go and the Fyne toolkit.
+A simple "Hello World" Windows GUI application built with Go and the Fyne toolkit.
 
 ## Features
 
