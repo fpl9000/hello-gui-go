@@ -13,8 +13,24 @@ A simple "Hello World" GUI application built with Go and the Fyne toolkit.
 
 - Go 1.24.2 or later
 - MinGW compiler (MSYS2 recommended for Windows)
-- Fyne v2 dependencies (automatically managed by Go modules)
-  - Install Fyne v2 by following the instructions at https://docs.fyne.io/started/
+- Fyne v2 dependencies - **Must be installed before building**
+
+### Required Setup Commands
+
+Execute these commands from within the project directory before building:
+
+```bash
+# Add Fyne v2 as a dependency to this project (required for each project)
+$ go get fyne.io/fyne/v2@latest
+
+# Install Fyne CLI tools globally (only needs to be run once per system)
+$ go install fyne.io/tools/cmd/fyne@latest
+```
+
+**Important Notes:**
+- The `go get` command must be executed for each Go project that uses Fyne
+- The `go install` command only needs to be executed once on each system where the application will be built
+- Both commands should be run from within the project directory
 
 ## Building the Application
 
