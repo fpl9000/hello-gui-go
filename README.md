@@ -11,9 +11,9 @@ A simple "Hello World" Windows GUI application built with Go and the Fyne toolki
 
 ## Requirements
 
-- Go 1.24.2 or later
-- MinGW compiler (MSYS2 recommended for Windows)
-- Fyne v2 dependencies - **Must be installed before building**
+- Go 1.24.2 or later.
+- MinGW GCC compiler.  Install MSYS2 to get this.
+- Fyne v2 dependencies. *These must be installed before building!*
 
 ### Required Setup Commands
 
@@ -28,9 +28,9 @@ $ go install fyne.io/tools/cmd/fyne@latest
 ```
 
 **Important Notes:**
-- The `go get` command must be executed for each Go project that uses Fyne
-- The `go install` command only needs to be executed once on each system where the application will be built
-- Both commands should be run from within the project directory
+- The `go get` command must be executed for each Go project that uses Fyne.
+- The `go install` command only needs to be executed once on each system where the application will be built.
+- Both commands should be run from within the project directory.
 
 ## Building the Application
 
@@ -83,9 +83,10 @@ The application uses the following main dependencies:
 
 ### Compiler Issues
 If you encounter "don't use the cygwin compiler" errors, ensure you're using MinGW instead of Cygwin's GCC:
-- Install MSYS2 with MinGW64
-- Set the PATH to include MinGW binaries
-- Set CC=gcc environment variable
+
+- Install MSYS2 with MinGW64.
+- Set the PATH to include MinGW binaries.
+- Set environment variable `CC` to `gcc`.
 
 ### Missing Dependencies
 Run `go mod tidy` to ensure all dependencies are properly downloaded and configured.
